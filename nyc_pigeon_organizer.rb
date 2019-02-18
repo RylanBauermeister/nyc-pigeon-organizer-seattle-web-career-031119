@@ -4,9 +4,9 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   result = Hash.new
    
-  data.each do |attribute, subcategory|
+  data.each do |attribute, categories|
      binding.pry
-    subcategory.each do |category, pigeons|
+    categories.each do |category, pigeons|
        binding.pry
       pigeons.each do |name|
          binding.pry
