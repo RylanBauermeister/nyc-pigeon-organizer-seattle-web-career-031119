@@ -17,6 +17,7 @@ def nyc_pigeon_organizer(data)
             result[name][attribute] = [] << category
           end
         else
+          result[name] = {}
           result[name][attribute] = [] << category
         end
       end
