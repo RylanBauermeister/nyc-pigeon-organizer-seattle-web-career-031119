@@ -3,6 +3,7 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   # write your code here!
   result = Hash.new
+    binding.pry
   data.each do |attribute, subcategory|
     subcategory.each do |category, pigeons|
       pigeons.each do |name|
@@ -18,6 +19,5 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  binding.pry
   result
 end
