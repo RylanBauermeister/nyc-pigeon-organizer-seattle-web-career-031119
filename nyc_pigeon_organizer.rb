@@ -5,9 +5,7 @@ def nyc_pigeon_organizer(data)
   result = Hash.new
    
   data.each do |attribute, categories|
-     binding.pry
     categories.each do |category, pigeons|
-       binding.pry
       pigeons.each do |name|
          binding.pry
         if result.include?(name)
