@@ -2,7 +2,7 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   # write your code here!
-  result = {}
+  result = Hash.new
   data.each do |attribute, subcategory|
     subcategory.each do |category, pigeons|
       pigeons.each do |name|
