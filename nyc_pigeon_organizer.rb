@@ -6,8 +6,14 @@ def nyc_pigeon_organizer(data)
       pigeons.each do |name|
         if result.inlude?(name)
           if result[name].include?(attribute)
-            result[name][attribute] << 
-  
-  
-  
+            result[name][attribute] << category
+          else
+            result[name][attribute] = [] << category
+          end
+        else
+          result[name][attribute] = [] << category
+        end
+      end
+    end
+  end
 end
